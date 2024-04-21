@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<!--=============================================================-->
+<!--Inicio: Barra de navegacion-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img class="w-100" src="img/hotel-final.png" alt="Cariongo">
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Habitaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Reservacion</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Cuenta</a>
+              </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--Fin: Barra de navegacion-->
+<!--=============================================================-->
+
+<!--Inicio: Contacto-->
+<div class="container col-lg-4 col-md-6 col-sm-12 col-xs-12 bg-light pb-3 mb-3 mt-3 rounded">
+
+  <!--Titulo-->
+  <h2 class="text-center pb-5 pt-3">Contactanos</h2>
+  <!--Titulo-->
+
+  <!--Contacto: Nombre-->
+  <div class="row">
+    <div class="col-2">
+      <img class="w-100" src="node_modules/bootstrap-icons/icons/person-circle.svg" alt="relleno">
+    </div>
+    <div class="col-10">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput1" placeholder="name@example.com">
+        <label for="floatingInput1">Nombre</label>
+      </div>
+    </div>
+  </div>
+  <!--Contacto: Nombre-->
+
+  <!--Contacto: Correo electronico-->
+  <div class="row">
+    <div class="col-2">
+      <img class="w-100" src="node_modules/bootstrap-icons/icons/envelope.svg" alt="relleno">
+    </div>
+    <div class="col-10">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com">
+        <label for="floatingInput2">Correo Electronico
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--Contacto: Correo electronico-->
+
+  <!--Contacto: Telefono-->
+ <div class="row">
+  <div class="col-2">
+    <img class="w-100" src="node_modules/bootstrap-icons/icons/telephone.svg" alt="relleno">
+  </div>
+  <div class="col-10">
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" id="floatingInput3" placeholder="name@example.com">
+      <label for="floatingInput3">Telefono
+      </label>
+    </div>
+  </div>
+ </div>
+ <!--Contacto: Telefono-->
+
+ <!--Contacto: Mensaje-->
+ <div class="row pb-4">
+  <div class="col-2">
+    <img class="w-100" src="node_modules/bootstrap-icons/icons/chat-dots.svg" alt="relleno">
+  </div>
+  <div class="col-10">
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Mensaje</label>
+    </div>
+  </div>
+ </div>
+ <!--Contacto: Mensaje-->
+
+ <!--Contacto: notificaciones-->
+ <div class="mb-4 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Acepta recibir notificaciones cuando salgan nuevos productos</label>
+</div>
+<!--Contacto: Notificaciones-->
+
+<!--Contacto: Boton enviar-->
+<button type="submit" class="btn btn-dark btn-lg mt-1 mb-3 text-center">Enviar</button><br>
+<!--Contacto: Boton enviar-->
+
+<!--Contacto: Mapa + boton-->
+<p class="d-inline-flex gap-1">
+  <a class="btn btn-primary btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Mostrar Mapa
+  </a>
+</p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      <div class="container text-center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d494.0733574852847!2d-72.2197008581472!3d7.833474033172847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1712542841488!5m2!1ses!2sve" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <!--Contacto: Mapa + boton-->
+</div>
+<!--Fin: Contacto-->
+
+
+<!--=============================================================-->
+<!--Inicio: pie de pagina-->
+
+
+
+<!--Fin: Pie de pagina-->
+<!--=============================================================-->
+
+<!--=============================================================-->
+<!--Recursos-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<!--Recursos-->
+
+</body>
+</html>
