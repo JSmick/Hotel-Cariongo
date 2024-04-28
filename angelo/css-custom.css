@@ -27,7 +27,9 @@
   body{
     background-color: #dee9ff;
 }
-
+.pieFondo{
+  background-color: rgb(21, 44, 36);
+}
 .registration-form{
 	padding: 50px 0;
 }
@@ -226,4 +228,3 @@ border-color: #EA2C5C;
 background-color: #D62553;
 border-color: #D62553;
 }
-

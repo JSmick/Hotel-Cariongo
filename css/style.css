@@ -6,8 +6,11 @@ body{
     background-repeat: no-repeat;
 }
 .navbarFondo{
-    background-color: aquamarine;
+    background-color: rgb(76, 156, 76);
 }
 .navbarPie{
+    background-color: rgb(21, 44, 36);
+}
+.pieFondo{
     background-color: rgb(21, 44, 36);
 }
