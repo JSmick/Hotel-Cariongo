@@ -33,18 +33,92 @@
             </li>
           </ul>
           <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de seccion/registro-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><img class="" height="50" src="img/persona-logo.png" alt=""></a>
+            <li class="nav-item"> <!--un item mas como el de nosotros, contacto, etc-->
+              <!--contenedor del inicio de seccion-->
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
+                  <div class="modal-content"> <!--contenido del inicio de seccion-->
+                    <div class="modal-header"> <!--Cabezera del inicio de seccion-->
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Iniciar Seccion</h1> <!--titulo-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                    </div>
+                    <div class="modal-body"> <!--cuerpo del inicio seccion-->
+                      <!--cuerpo del usuario-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el usuario-->
+                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo de la contraseña-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
+                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Iniciar Seccion</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <!--Redireccion en la misma pagina, para que te registres-->
+                      <p class="d-inline">¿No tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrate</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--fin del contenedor del inicio de seccion-->
+              <!--contenedor del registro-->
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
+                  <div class="modal-content"> <!--contenido del registro-->
+                    <div class="modal-header"> <!--cabecera del registro-->
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registrarse</h1> <!--titulo-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                    </div>
+                    <div class="modal-body"> <!--cuerpo del registro-->
+                      <!--cuerpo del usuario a registrarse-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el usuario-->
+                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo del correo-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/envelope.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el correo-->
+                          <input type="email" class="form-control" id="floatingInputGroup1" placeholder="Correo Electronico"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Correo Electronico</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo de la contraseña que se va a colocar-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
+                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Registrarse</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <!--Redireccion en la misma pagina, para que inicies seccion-->
+                      <p class="d-inline">¿Ya tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inicia seccion</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--boton que le da la funcion de poder precionar a la persona-->
+              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="img/persona-logo.png" alt=""></button>
             </li>
           </ul>
         </div>
       </div>
+      
     </header>
+    
     <!--Barra de Navegacion-->
     <!--------------------------------------------------->
 
 
-    <p class="h1 text-bg-danger text-center">Hola victor.. VICTOR</p>
 
     <!--------------------------------------------------->
     <!--Pie de pagina-->
