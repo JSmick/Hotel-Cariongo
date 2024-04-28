@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Cariongo</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <!--------------------------------------------------->
     <!--Barra de Navegacion-->
-    <nav class="navbar navbar-expand-lg navbarFondo "> <!--cabecera de la barra de navegacion-->
+    <header class="navbar navbar-expand-lg navbarFondo "> <!--cabecera de la barra de navegacion-->
       <div class="container-fluid"> <!--contenedor de la barra de navegacion-->
         <a class="navbar-brand" href="#"> <!--Logo del hotel cariongo en la barra-->
           <img class="w-100" src="img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
@@ -41,61 +39,12 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
     <!--Barra de Navegacion-->
     <!--------------------------------------------------->
-    
-    <!--------------------------------------------------->
-    <!-- imagen principal de la pagina -->
-    <header class="card bg-black"> <!--contenedor de la carta-->
-      <img class="card-img bg-body-secondary opacity-50" src="img/portada-1.jpg" alt=""> <!--imagen de la carta-->
-      <div class="card-img-overlay align-content-center"> <!--contenedor del texto-->
-        <!--titulo de la carta-->
-        <h1 class="display-5 fw-bolder text-center text-warning">Hotel Cariongo: Un hotel para cada tipo de viajero</h1>
-        <!--el eslogan, cuerpo de la carta-->
-        <p class="h5 text-center text-white ms-4 me-4">Tu refugio de calidez venezolana. Disfruta de habitaciones acogedoras, servicio atento y experiencias auténticas en el corazón de Táchira.</p>
-      </div>
-    </header>
-    <!-- imagen principal de la pagina -->
-    <!--------------------------------------------------->
-
-    <div class="container-fluid bg-white"> <!--contenedor de la galeria-->
-      <div class="row"> <!--fila principal de la galeria-->
-        <div class="col-lg-4 col md-6 col-sm-6 p-0 m-0"> <!--columna del carrusel (galeria)-->
-          <!--contenedor del carrusel-->
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner"> <!--Carrusel interior-->
-              <div class="carousel-item active"> <!--imagen del carrusel-->
-                <img src="img/habitacion-1-medium.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item"> <!--imagen del carrusel-->
-                <img src="img/habitacion-2-medium.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item"> <!--imagen del carrusel-->
-                <img src="img/habitacion-3-medium.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item"> <!--imagen del carrusel-->
-                <img src="img/habitacion-4-medium.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item"> <!--imagen del carrusel-->
-                <img src="img/habitacion-5-medium.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-          </div> <!--Fin del carrusel-->
-        </div>
-        <div class="col-lg-8 col md-6 col-sm-6"> <!--columna de la parte del texto-->
-          <p class="h2 text-center">Galeria</p> <!--titulo de la galeria-->
-          <!--cuerpo o textazo de la galeria-->
-          <p class="h3 text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque veniam corrupti beatae voluptates vitae laudantium quis, inventore atque sed quasi veritatis tempore numquam recusandae assumenda molestias eaque in fuga.</p>
-        </div>
-      </div>
-    </div>
 
 
-
-
-
-
+    <p class="h1 text-bg-danger text-center">Hola victor.. VICTOR</p>
 
     <!--------------------------------------------------->
     <!--Pie de pagina-->
@@ -124,13 +73,13 @@
               <img src="img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
 
               <!--Boton de la ubicacion-->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><p class="h5">Ver Ubicacion</p></button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Ubicacion</button>
               <!--pantalla emergente con la ubicacion-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-3 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body"> <!--donde va el mapa, body-->
@@ -166,6 +115,14 @@
     <!--Pie de pagina-->
     <!--------------------------------------------------->
 
+
+    <!--------------------------------------------------->
+    <!--Recursos JavaScript-->
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Recursos JavaScript-->
+    <!--------------------------------------------------->
+    
   </body>
 </html>
