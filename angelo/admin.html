@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Hotel Cariongo</title>
+  </head>
+
+  <body>
+      <section>
+        <div class="container my-1">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <div class="Logo mx-auto">
+                  <img src="Img/hotel-final-2.png" alt="Logo">
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <!-- Botón para activar el Offcanvas -->
+                    <li class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                      Configuración
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:5500/index.html" onclick="logout()">Cerrar sesión</a>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+    
+      <!-- Offcanvas (panel deslizable) -->
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Configuración</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+          <!-- Contenido del Offcanvas (panel deslizable)-->
+          <div class="container">
+            <div class="text-center">
+            </div>
+            <div class="text-center mt-3">
+              <!-- Botones Configuracion -->
+              <button type="button" class="btn btn-primary mr-2" data-bs-toggle="modal" data-bs-target="#cambiarLogin">Cambiar Contraseña</button>
+              <button type="button" class="btn btn-danger" onclick="borrarDatosLocalStorage()">Reestablecer Contraseña</button>
+              <button type="button" class="btn btn-danger" onclick="borrarInscritos()">Borrar Reservaciones</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Modal para cambiar la contraseña -->
+      <section>
+        <div class="modal fade" id="cambiarLogin" tabindex="-1" aria-labelledby="cambiarLoginLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cambiarLoginLabel">Cambiar Contraseña</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form method="post">
+                  <div class="mb-3">
+                    <label for="oldUser" class="form-label">Usuario Anterior:</label>
+                    <input type="text" class="form-control" id="oldUser" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="oldPass" class="form-label">Contraseña Anterior:</label>
+                    <input type="password" class="form-control" id="oldPass" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="newUser" class="form-label">Nuevo Usuario:</label>
+                    <input type="text" class="form-control" id="newUser" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="newPassword" class="form-label">Nueva Contraseña:</label>
+                    <input type="password" class="form-control" id="newPass" required>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="cambioUserPass()">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+     
+    </header>
+
+    <main>
+      
+      <section class="titulo-pag">
+        <div class="container">
+          <h2 class="texto-pag">Admin</h2>
+          <p class="descripcion-pag"></p>
+        </div>
+      </section>
+      <!-- Sección planilla de Preinscripción -->
+      <section>
+        <div class="container">
+          <h2 class="text-center mt-4">Reservados</h2>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Cédula</th>
+                <th>Edad</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>habitacion solicitada</th>
+              </tr>
+            </thead>
+            <tbody id="tablaInscritos">
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <div class="container">
+          <h2 class="text-center mt-4">Habitaciones</h2>
+      
+          <div class="row">
+            <div class="col-md-6">
+ 
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jsCustom.js"></script>
+
+  </body>
+</html>
+
+

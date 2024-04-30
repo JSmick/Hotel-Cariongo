@@ -1,0 +1,16 @@
+body{
+    background-image: url(fondo-2.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.navbarFondo{
+    background-color: rgb(76, 156, 76);
+}
+.navbarPie{
+    background-color: rgb(21, 44, 36);
+}
+.pieFondo{
+    background-color: rgb(21, 44, 36);
+}

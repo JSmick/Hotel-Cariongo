@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/glass.ico" type="image/x-icon">
-    <title>Hotel Cariongo II - Inicio</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Cariongo</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!--------------------------------------------------->
     <!--Barra de Navegacion-->
     <header class="navbar navbar-expand-lg navbarFondo "> <!--cabecera de la barra de navegacion-->
       <div class="container-fluid"> <!--contenedor de la barra de navegacion-->
-        <a class="navbar-brand" href="#"> <!--Logo del hotel cariongo en la barra-->
+        <a class="navbar-brand" href="index.html"> <!--Logo del hotel cariongo en la barra-->
           <img class="w-100" src="img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
         </a>
         <!--boton responsivo, aparece cuando se usa en una tablet o telefono-->
@@ -23,25 +25,104 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--lugar donde estan los links, el collapse-->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> <!--link de nosotros-->
-              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Nosotros</p></a>
+              <a class="nav-link active" aria-current="page" href="#Nosotros"><p class="h4 text-white ps-1">Nosotros</p></a>
             </li>
             <li class="nav-item"> <!--link de habitaciones-->
-              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Habitaciones</p></a>
+              <a class="nav-link active" aria-current="page" href="habitaciones.html"><p class="h4 text-white ps-1">Habitaciones</p></a>
             </li>
             <li class="nav-item"> <!--link de contacto-->
-              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Contacto</p></a>
+              <a class="nav-link active" aria-current="page" href="contacto.html"><p class="h4 text-white ps-1">Contacto</p></a>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="angelo/reservar.html"><p class="h4 text-white ps-1">Reservar</p></a>
             </li>
           </ul>
           <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de seccion/registro-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><img class="" height="50" src="img/user.png" alt=""></a>
+            <li class="nav-item"> <!--un item mas como el de nosotros, contacto, etc-->
+              <!--contenedor del inicio de seccion-->
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
+                  <div class="modal-content"> <!--contenido del inicio de seccion-->
+                    <div class="modal-header"> <!--Cabezera del inicio de seccion-->
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Iniciar Seccion</h1> <!--titulo-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                    </div>
+                    <div class="modal-body"> <!--cuerpo del inicio seccion-->
+                      <!--cuerpo del usuario-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el usuario-->
+                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo de la contraseña-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
+                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Iniciar Seccion</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <!--Redireccion en la misma pagina, para que te registres-->
+                      <p class="d-inline">¿No tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrate</button>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--fin del contenedor del inicio de seccion-->
+              <!--contenedor del registro-->
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
+                  <div class="modal-content"> <!--contenido del registro-->
+                    <div class="modal-header"> <!--cabecera del registro-->
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registrarse</h1> <!--titulo-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                    </div>
+                    <div class="modal-body"> <!--cuerpo del registro-->
+                      <!--cuerpo del usuario a registrarse-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el usuario-->
+                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo del correo-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/envelope.svg" alt=""></span> <!--logo del usuario-->
+                        <div class="form-floating"> <!--donde va a escribir el correo-->
+                          <input type="email" class="form-control" id="floatingInputGroup1" placeholder="Correo Electronico"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Correo Electronico</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <!--cuerpo de la contraseña que se va a colocar-->
+                      <div class="input-group mb-3"> <!--cuerpo-->
+                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
+                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                        </div>
+                      </div>
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Registrarse</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <!--Redireccion en la misma pagina, para que inicies seccion-->
+                      <p class="d-inline">¿Ya tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inicia seccion</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--boton que le da la funcion de poder precionar a la persona-->
+              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="img/persona-logo.png" alt=""></button>
             </li>
           </ul>
         </div>
       </div>
+      
     </header>
+    
     <!--Barra de Navegacion-->
     <!--------------------------------------------------->
+    
     <!--Carrusel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -53,22 +134,16 @@
         <div class="carousel-item active">
           <img src="img/habi1.jpg" class="img-fluid d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/habi2.jpg" class="img-fluid d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="img/habi3.jpg" class="img-fluid d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div>
       </div>
@@ -82,102 +157,106 @@
       </button>
     </div>
     <!--Fin del Carrusel-->
-    <!--Inicio de ¿Tarjeta? no sé-->
-    <div class="container-fluid p-0 mt-3"> <!--Esto es para que ocupe todo el espacio-->
-      <div class="card border-0"> <!--Esto es para especificar que es una card-->
-        <div class="row"> <!--esto es una fila-->
-          <div class="col-lg-3 col-md-3 col-sm-3"> <!--Esto son columnas-->
-            <img class="img-fluid w-100 ps-1 me-3" src="img/habitacion-3.jpg" alt="">
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-3">
-            <img class="img-fluid w-100 m-3" src="img/habitacion-4.jpg" alt="">
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 p-3">
-            <div class="card-body"> <!--Esto es para que el texto sea parte del cuerpo de la card-->
-              <p class="h4">Bienvenido al</p>
-              <p class="h3 mb-4">Hotel Cariongo II</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta eius debitis cupiditate dolor magnam, fuga vero beatae in non velit iure ad eaque consequuntur autem consequatur earum odit maiores nihil!</p>
-              <a href="#" class="btn btn-primary">Leer más</a> <!--Esto de aqui es un boton que no hace nada xd-->
+
+  
+    <!--seccion de posible galeria-->
+    <div class="container-fluid bg-light border-0 mt-3"> <!--Contenedor de la seccion bienvenido-->
+      <div class="row"> <!--fila principal de la seccion-->
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4 pt-3 mb-3"> <!--columna con una imagen-->
+          <img class="w-100" src="img/habitacion-3.jpg" alt=""> <!--Imagen-->
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 mt-4 pt-3 mb-3"> <!--columna con una imagen-->
+          <img class="w-100" src="img/habitacion-4.jpg" alt=""> <!--Imagen-->
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt-3"> <!--columna con contenido-->
+          <p class="h4 text-center" id="Nosotros">Bienvenido al</p> <!--titulo de bienvenida-->
+          <p class="h3 text-center">Hotel Cariongo II</p> <!--titulo principal-->
+          <!--Historia del hotel-->
+          <p class="mt-3 ms-4 me-4">El Hotel Cariongo: Un refugio de encanto en el Táchira. En el corazón del estado Táchira, Venezuela, se encuentra el Hotel Cariongo, un oasis de paz y tranquilidad que te invita a descubrir la magia del Táchira. Su arquitectura colonial y su ambiente cálido te harán sentir como en casa desde el momento en que llegues.</p>
+            
+          
+          <p>
+            <button class="btn btn-primary ms-4 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Leer mas
+            </button>
+          </p>
+            <div class="collapse collapse-horizontal mb-4 ms-4 me-4" id="collapseWidthExample">
+              Más allá de su belleza arquitectónica, el Hotel Cariongo alberga un sinfín de historias que susurran entre sus paredes. Cada habitación guarda un secreto, cada rincón esconde un recuerdo, y cada pasillo conduce a un nuevo capítulo en la rica narrativa del hotel. Entre sus huéspedes más ilustres se encuentran artistas, escritores, políticos y aventureros, todos ellos atraídos por la magia única del lugar. <br><br>El Hotel Cariongo no es solo un lugar para hospedarse, es un lugar para vivir experiencias. Sus jardines floridos y su personal atento y servicial están siempre dispuestos a atender a las necesidades de los huéspedes, creando un ambiente familiar y acogedor.
             </div>
-          </div>
-        </div>
-    </div>
-    <!--Fin de lo que sea que sea eso-->
-    <!--Inicio de los servicios-->
-    <div class="container-fluid p-0 mt-3">
-      <div class="card border-0 servicios">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 p-3 text-center text-white">
-            <p class="h1">Facilidades y Servicios</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 text-white">
-            <p class="h2"><img class="m-3" src="img/wifi.png" height="75" alt="Wi-Fi">Servicio de Wi-Fi en la recepción</p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 text-white">
-            <p class="h2"><img class="m-3" src="img/servicio-al-cliente.png" height="75" alt="Servicio al cliente">Atención las 24 horas del día</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 text-white">
-            <p class="h2"><img class="m-3" src="img/agua.png" height="75" alt="Agua">Servicio de Agua</p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 text-white">
-            <p class="h2"><img class="m-3" src="img/estacionamiento.png" height="75" alt="Estacionamiento">Estacionamiento</p>
-          </div>
+
+
         </div>
       </div>
     </div>
-    <!--Fin de los servicios-->
-    <!--Inicio opiniones (es una plantilla)-->
-    <div class="container-fluid p-0 mt-3 text-white fondo">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-10 col-xl-8 text-center p-3">
-          <h3 class="mb-4">Opiniones</h3>
-          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-            Algunas opiniones de nuestros huespedes!
-          </p>
+    <!--seccion de posible galeria-->
+
+    <!--seccion de servicios-->
+    <div class="container-fluid bg-dark mt-3"> <!--contenedor de los servicios-->
+      <div class="row"> <!--fila del titulo-->
+        <div class="col-lg-12 col-md-12 col-ms-12 col-12 text-center text-white mb-3"> <!--columna del titulo-->
+          <p class="display-3">Facilidades y Servicios</p> <!--titulo-->
         </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4 mb-5 mb-md-0">
-          <div class="d-flex justify-content-center mb-4">
-            <img src="img/pfp-1.jpg"
-              class="rounded-circle shadow-1-strong" width="150" height="150" />
+        <div class="row"> <!--fila de los servicios-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
+            <!--Imagen y texto del servicio-->
+            <img height="70" src="img/wifi.png" alt=""> <p class="text-white d-inline h6 ms-4">Servicio de Wi-Fi en la recepción</p>
           </div>
-          <h5 class="mb-3">Angel Bustos</h5>
-          <h6 class="text-primary mb-3">Web Developer</h6>
-          <p class="px-xl-3">
-            <i class="fas fa-quote-left pe-2"></i>Me gustó el trabajo que hacen todos los trabajadores. Siempre están dispuestos a ayudarte, con una sonrisa en la cara y mucho respeto. ¡Lo recomiendo! También el servicio de habitación es excepcional.
-          </p>
-        </div>
-        <div class="col-md-4 mb-5 mb-md-0">
-          <div class="d-flex justify-content-center mb-4">
-            <img src="img/pfp-3.png"
-              class="rounded-circle shadow-1-strong" width="150" height="150" />
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
+            <!--Imagen y texto del servicio-->
+            <img height="70" src="img/agua.png" alt=""> <p class="text-white d-inline h6 ms-4">Servicio de Agua</p>
           </div>
-          <h5 class="mb-3">Juan Herrera</h5>
-          <h6 class="text-primary mb-3">Graphic Designer</h6>
-          <p class="px-xl-3">
-            <i class="fas fa-quote-left pe-2"></i>Los miembros del staff son muy atentos y amigables. Su hospitalidad hizo que nuestra estancia fuera aún más agradable.
-          </p>
-        </div>
-        <div class="col-md-4 mb-0">
-          <div class="d-flex justify-content-center mb-4">
-            <img src="img/pfp-2.jpg"
-              class="rounded-circle shadow-1-strong" width="150" height="150" />
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
+            <!--Imagen y texto del servicio-->
+            <img height="70" src="img/servicio-al-cliente.png" alt=""> <p class="text-white d-inline h6 ms-4">Atención las 24 horas del día</p>
           </div>
-          <h5 class="mb-3">Angelo Guillen</h5>
-          <h6 class="text-primary mb-3">Marketing Specialist</h6>
-          <p class="px-xl-3">
-            <i class="fas fa-quote-left pe-2"></i>La cama y la terraza son fenomenales. Disfrutamos de una vista espectacular desde la terraza. ¡Volveremos sin dudas!.
-          </p>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
+            <!--Imagen y texto del servicio-->
+            <img height="70" src="img/estacionamiento.png" alt=""> <p class="text-white d-inline h6 ms-4">Estacionamiento</p>
+          </div>
         </div>
-      </div>
       </div>
     </div>
-    <!--Fin de las opiniones-->
+    <!--seccion de servicios-->
+
+    <!--seccion de opiniones-->
+    <div class="container-fluid bg-black bg-opacity-50"> <!--contenedor de las opiniones-->
+      <div class="row"> <!--fila del titulo-->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center"> <!--columna del titulo-->
+          <h1 class="display-3 text-white border-light">Opiniones</h1> <!--titulo-->
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center mb-5"> <!--columna del texto descriptivo del titulo-->
+          <p class="h5 text-white">Algunas opiniones de nuestros huespedes!</p> <!--textazo-->
+        </div>
+      </div>
+      <div class="row"> <!--fila de opiniones-->
+        <!--opinion 1-->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
+          <img class="rounded-circle" height="150" src="img/pfp-1.jpg" alt=""> <!--imagen-->
+          <p class="h2 text-white">Angel Bustos</p> <!--nombre del opinando-->
+          <p class="h4 text-primary mb-4">Web Developer</p> <!--profecion-->
+          <!--Su opinion-->
+          <p class="h6 text-white">Me gustó el trabajo que hacen todos los trabajadores. Siempre están dispuestos a ayudarte, con una sonrisa en la cara y mucho respeto. ¡Lo recomiendo! También el servicio de habitación es excepcional.</p>
+        </div>
+        <!--opinion 2-->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
+          <img class="rounded-circle" height="150" src="img/pfp-3.png" alt=""> <!--imagen-->
+          <p class="h2 text-white">Juan Herrera</p> <!--nombre del opinando-->
+          <p class="h4 text-primary mb-4">Graphic Designer</p> <!--profecion-->
+          <!--Su opinion-->
+          <p class="h6 text-white">Los miembros del staff son muy atentos y amigables. Su hospitalidad hizo que nuestra estancia fuera aún más agradable.</p>
+        </div>
+        <!--opinion 3-->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
+          <img class="rounded-circle" height="150" src="img/pfp-2.jpg" alt=""> <!--imagen-->
+          <p class="h2 text-white">Angelo Guillen</p> <!--nombre del opinando-->
+          <p class="h4 text-primary mb-4">Marketing Specialist</p> <!--profecion-->
+          <!--Su opinion-->
+          <p class="h6 text-white">La cama y la terraza son fenomenales. Disfrutamos de una vista espectacular desde la terraza. ¡Volveremos sin dudas!.</p>
+        </div>
+      </div>
+    </div>
+<!--seccion de opiniones-->
+
     <!--------------------------------------------------->
     <!--Pie de pagina-->
     
@@ -188,7 +267,7 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 text-white"> <!--Columna de la seccion de comunicate-->
           <div class="row"> <!--fila del titulo-->
-            <p class="h2 text-white mt-4">Comunicate</p> <!--Titulo-->
+            <p class="h2 text-white mt-4 pb-4">Comunicate</p> <!--Titulo-->
           </div>
           <div class="row"> <!--fila de numero de telefono-->
             <div class="col mb-3"> <!--columna del numero de telefono-->
@@ -205,13 +284,13 @@
               <img src="img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
 
               <!--Boton de la ubicacion-->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Ubicacion</button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><p class="h5">Ver Ubicacion</p></button>
               <!--pantalla emergente con la ubicacion-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
+                      <h1 class="modal-title fs-3 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body"> <!--donde va el mapa, body-->
@@ -247,14 +326,6 @@
     <!--Pie de pagina-->
     <!--------------------------------------------------->
 
-
-    <!--------------------------------------------------->
-    <!--Recursos JavaScript-->
-
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!--Recursos JavaScript-->
-    <!--------------------------------------------------->
-    
   </body>
 </html>

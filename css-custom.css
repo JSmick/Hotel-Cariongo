@@ -1,0 +1,42 @@
+/* Estilos para las secciones de habitaciones */
+.general {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.general-1, .general-3 {
+  flex-basis: 50%;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: #5D6975;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: #0056b3;
+}
+
