@@ -1,3 +1,4 @@
+/*Imagen de fondo en todas las paginas*/
 body{
     background-image: url(fondo-2.png);
     background-size: cover;
@@ -5,12 +6,11 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+/*color personalizado para la barra de navegacion*/
 .navbarFondo{
     background-color: rgb(76, 156, 76);
 }
-.navbarPie{
-    background-color: rgb(21, 44, 36);
-}
+/*color personalizado para el pie de pagina*/
 .pieFondo{
     background-color: rgb(21, 44, 36);
 }

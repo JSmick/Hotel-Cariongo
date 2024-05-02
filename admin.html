@@ -3,41 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css-custom.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hotel Cariongo</title>
   </head>
 
   <body>
-      <section>
-        <div class="container my-1">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <div class="Logo mx-auto">
-                  <img src="Img/hotel-final-2.png" alt="Logo">
-                </div>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <!-- Botón para activar el Offcanvas -->
-                    <li class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-                      Configuración
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html" onclick="logout()">Cerrar sesión</a>
-                    </li>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <!--------------------------------------------------->
+    <!--Barra de Navegacion-->
+    <header class="navbar navbar-expand-lg bg-dark"> <!--cabecera de la barra de navegacion-->
+      <div class="container-fluid"> <!--contenedor de la barra de navegacion-->
+        <a class="navbar-brand" href="index.html"> <!--Logo del hotel cariongo en la barra-->
+          <img class="w-100" src="img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
+        </a>
+        <!--boton responsivo, aparece cuando se usa en una tablet o telefono-->
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> <!--boton-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--lugar donde estan los links, el collapse-->
+          <li class="navbar-nav me-auto mb-2 mb-lg-0"> <!--mini contenedor de los links-->
+            <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+              <p class="h4 text-white ps-1 mb-3">Configuracion</p>
+            </li>
+            <li class="navbar-nav"> <!--link de cerrar seccion-->
+              <a class="nav-item nav-link active" aria-current="page" href="index.html" onclick="logout()"><p class="h4 text-white ps-1 mb-3">Cerrar seccion</p></a>
+            </li>
+          </li>
         </div>
-      </section>
+      </div>
+    </header>
+    
+    <!--Barra de Navegacion-->
+    <!--------------------------------------------------->
     
       <!-- Offcanvas (panel deslizable) -->
       <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -97,50 +94,43 @@
           </div>
         </div>
       </section>
-    
-     
-    </header>
 
-    <main>
-      
-      <section class="titulo-pag">
-        <div class="container">
-          <h2 class="texto-pag">Admin</h2>
-          <p class="descripcion-pag"></p>
+
+      <!--Titulo de la pagina-->
+      <div class="container-fluid bg-dark opacity-75 bg-dark opacity-75 text-white pt-2 pb-4 mb-3 mt-3"> <!--contenedor del titulo gigante-->
+        <div class="row text-center"> <!--fila principal del titulo-->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 display-2 fw-bolder">Administrar reservaciones</div> <!--titulo gigante-->
         </div>
-      </section>
+      </div>
+    
       <!-- Sección planilla de Preinscripción -->
-      <section>
-        <div class="container">
-          <h2 class="text-center mt-4">Reservados</h2>
-          <table class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Cédula</th>
-                <th>Edad</th>
-                <th>Email</th>
-                <th>Teléfono</th>
-                <th>habitacion solicitada</th>
-              </tr>
-            </thead>
-            <tbody id="tablaInscritos">
-            </tbody>
-          </table>
-        </div>
-      </section>
-      
-      <section>
-        <div class="container">
-          <h2 class="text-center mt-4">Habitaciones</h2>
-      
-          <div class="row">
-            <div class="col-md-6">
- 
-    </main>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="jsCustom.js"></script>
+    <div class="container-fluid"> <!--contenedor de la tabla-->
+      <div class="table-responsive"> <!--tabla responsiva-->
+        <table class="table table-striped-columns"> <!--tabla-->
+          <thead> <!--cabecera de la tabla-->
+            <tr> <!--elementos de la tabla-->
+              <th class="align-middle">Nombre</th>
+              <th class="align-middle">Apellidos</th>
+              <th class="align-middle">Cédula</th>
+              <th class="align-middle">Edad</th>
+              <th class="align-middle">Email</th>
+              <th class="align-middle">Teléfono</th>
+              <th class="align-middle">habitacion solicitada</th>
+            </tr>
+          </thead>
+          <tbody id="tablaInscritos"></tbody> <!--cuerpo de la tabla-->
+        </table>
+      </div>
+    </div>
+
+    <!--------------------------------------------------->
+    <!--Recursos JavaScript-->
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--Recursos JavaScript-->
+    <!--------------------------------------------------->
 
   </body>
 </html>
