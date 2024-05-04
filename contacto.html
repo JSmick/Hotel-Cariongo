@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!--------------------------------------------------->
@@ -16,7 +16,7 @@
     <header class="navbar navbar-expand-lg navbarFondo "> <!--cabecera de la barra de navegacion-->
       <div class="container-fluid"> <!--contenedor de la barra de navegacion-->
         <a class="navbar-brand" href="index.html"> <!--Logo del hotel cariongo en la barra-->
-          <img class="w-100" src="img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
+          <img class="w-100" src="assets/img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
         </a>
         <!--boton responsivo, aparece cuando se usa en una tablet o telefono-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,26 +25,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--lugar donde estan los links, el collapse-->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> <!--link de nosotros-->
-              <a class="nav-link active" aria-current="page" href="index.html"><p class="h4 text-white ps-1">Nosotros</p></a>
+              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Nosotros</p></a>
             </li>
             <li class="nav-item"> <!--link de habitaciones-->
-              <a class="nav-link active" aria-current="page" href="habitaciones.html"><p class="h4 text-white ps-1">Habitaciones</p></a>
+              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Habitaciones</p></a>
             </li>
             <li class="nav-item"> <!--link de contacto-->
-              <a class="nav-link active" aria-current="page" href="contacto.html"><p class="h4 text-white ps-1">Contacto</p></a>
+              <a class="nav-link active" aria-current="page" href="#"><p class="h4 text-white ps-1">Contacto</p></a>
             </li>
           </ul>
-          <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de seccion/registro-->
+          <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de sesion/registro-->
             <li class="nav-item"> <!--un item mas como el de nosotros, contacto, etc-->
-              <!--contenedor del inicio de seccion-->
+              <!--contenedor del inicio de sesion-->
               <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
-                  <div class="modal-content"> <!--contenido del inicio de seccion-->
-                    <div class="modal-header"> <!--Cabezera del inicio de seccion-->
+                  <div class="modal-content"> <!--contenido del inicio de sesion-->
+                    <div class="modal-header"> <!--Cabezera del inicio de sesion-->
                       <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Iniciar Sesion</h1> <!--titulo-->
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de sesion y el registro-->
                     </div>
-                    <div class="modal-body"> <!--cuerpo del inicio seccion-->
+                    <div class="modal-body"> <!--cuerpo del inicio de sesion-->
                       <!--cuerpo del usuario-->
                       <div class="input-group mb-3"> <!--cuerpo-->
                         <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
@@ -56,25 +56,25 @@
                       <!--cuerpo de la contraseña-->
                       <div class="input-group mb-3"> <!--cuerpo-->
                         <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
-                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                        <div class="form-floating"> <!--donde va a escribir la contraseña-->
                           <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
                           <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
                         </div>
                       </div>
-                      <a href="#"><div class="text-center"><button class="btn btn-dark">Iniciar Sesion</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Iniciar Sesion</button></div></a><br> <!--boton para iniciar sesion. Nota: por cuestion de uso, redirige a la pagina de admin-->
                       <!--Redireccion en la misma pagina, para que te registres-->
                       <p class="d-inline">¿No tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrate</button>
                     </div>
                   </div>
                 </div>
-              </div> <!--fin del contenedor del inicio de seccion-->
+              </div> <!--fin del contenedor del inicio de sesion-->
               <!--contenedor del registro-->
               <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
                   <div class="modal-content"> <!--contenido del registro-->
                     <div class="modal-header"> <!--cabecera del registro-->
                       <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registrarse</h1> <!--titulo-->
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de sesion y el registro-->
                     </div>
                     <div class="modal-body"> <!--cuerpo del registro-->
                       <!--cuerpo del usuario a registrarse-->
@@ -101,15 +101,15 @@
                           <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
                         </div>
                       </div>
-                      <a href="#"><div class="text-center"><button class="btn btn-dark">Registrarse</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
-                      <!--Redireccion en la misma pagina, para que inicies seccion-->
-                      <p class="d-inline">¿Ya tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inicia seccion</button>
+                      <a href="#"><div class="text-center"><button class="btn btn-dark">Registrarse</button></div></a><br> <!--boton para iniciar sesion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                      <!--Redireccion en la misma pagina, para que inicies sesion-->
+                      <p class="d-inline">¿Ya tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inicia Sesion</button>
                     </div>
                   </div>
                 </div>
               </div>
               <!--boton que le da la funcion de poder precionar a la persona-->
-              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="img/persona-logo.png" alt=""></button>
+              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="assets/img/persona-logo.png" alt=""></button>
             </li>
           </ul>
         </div>
@@ -273,7 +273,7 @@
     <footer class="container-fluid pieFondo mt-3"> <!--Contenedor del pie de pagina-->
       <div class="row"> <!--fila principal del pie de pagina-->
         <div class="col-lg-5 col-md-6 col-sm-12 text-center mb-4 mt-4"> <!--Columna de la seccion del logo-->
-          <img src="img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
+          <img src="assets/img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 text-white"> <!--Columna de la seccion de comunicate-->
           <div class="row"> <!--fila del titulo-->
@@ -281,17 +281,17 @@
           </div>
           <div class="row"> <!--fila de numero de telefono-->
             <div class="col mb-3"> <!--columna del numero de telefono-->
-              <img src="img/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0414-175-4156</p></span> <!--imagen y numero del telefono-->
+              <img src="assets/img/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0414-175-4156</p></span> <!--imagen y numero del telefono-->
             </div>
           </div>
           <div class="row"> <!--fila del correo electronico-->
             <div class="col mb-3"> <!--columna del correo electronico-->
-              <img src="img/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
+              <img src="assets/img/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
             </div>
           </div>
           <div class="row"> <!--fila de la ubicacion-->
             <div class="col mb-3"> <!--columna de la ubicacion-->
-              <img src="img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
+              <img src="assets/img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
 
               <!--Boton de la ubicacion-->
               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Ubicacion</button>
@@ -323,10 +323,10 @@
             </div>
             <div class="row"> <!--fila de las redes sociales-->
             <div class="col text-center"> <!--columna de las redes sociales-->
-              <a href="#"><img class="me-2" src="img/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
-              <a href="#"><img class="me-2" src="img/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
-              <a href="#"><img class="me-2" src="img/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
-              <a href="#"><img class="me-2" src="img/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
+              <a href="#"><img class="me-2" src="assets/img/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
+              <a href="#"><img class="me-2" src="assets/img/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
+              <a href="#"><img class="me-2" src="assets/img/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
+              <a href="#"><img class="me-2" src="assets/img/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
             </div>
           </div>
         </div>

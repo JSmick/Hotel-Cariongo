@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Cariongo</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css-custom.css">
-    <link rel="stylesheet" href="angelo/css-custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>hotel Cariongo</title>
   </head>
-  <body>
 
+  <body>
+    
     <!--------------------------------------------------->
     <!--Barra de Navegacion-->
-    <header class="navbar navbar-expand-lg navbarFondo "> <!--cabecera de la barra de navegacion-->
+    <header class="navbar navbar-expand-lg bg-dark"> <!--cabecera de la barra de navegacion-->
       <div class="container-fluid"> <!--contenedor de la barra de navegacion-->
-        <a class="navbar-brand" href="#"> <!--Logo del hotel cariongo en la barra-->
-          <img class="w-100" src="img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
+        <a class="navbar-brand" href="index.html"> <!--Logo del hotel cariongo en la barra-->
+          <img class="w-100" src="assets/img/hotel-final.png" alt="Cariongo"> <!--imagen del hotel-->
         </a>
         <!--boton responsivo, aparece cuando se usa en una tablet o telefono-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span> <!--boton-->
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--lugar donde estan los links, el collapse-->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> <!--link de nosotros-->
-              <a class="nav-link active" aria-current="page" href="index.html"><p class="h4 text-white ps-1">Nosotros</p></a>
+              <a class="nav-link active" aria-current="page" href="#Nosotros"><p class="h4 text-white ps-1">Nosotros</p></a>
             </li>
             <li class="nav-item"> <!--link de habitaciones-->
               <a class="nav-link active" aria-current="page" href="habitaciones.html"><p class="h4 text-white ps-1">Habitaciones</p></a>
@@ -34,85 +33,43 @@
               <a class="nav-link active" aria-current="page" href="contacto.html"><p class="h4 text-white ps-1">Contacto</p></a>
             </li>
           </ul>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</a>
-        </li>
-          <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de seccion/registro-->
+          <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de sesion/registro-->
             <li class="nav-item"> <!--un item mas como el de nosotros, contacto, etc-->
-              <!--contenedor del inicio de seccion-->
+              <!--contenedor del inicio de sesion-->
               <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
-                  <div class="modal-content"> <!--contenido del inicio de seccion-->
-                    <div class="modal-header"> <!--Cabezera del inicio de seccion-->
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Iniciar Seccion</h1> <!--titulo-->
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
+                  <div class="modal-content"> <!--contenido del inicio de sesion-->
+                    <div class="modal-header"> <!--Cabezera del inicio de sesion-->
+                      <h1 class="modal-title fs-5 text-dark" id="loginModalLabel">Iniciar Sesion</h1> <!--titulo-->
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de sesion y el registro-->
                     </div>
-                    <div class="modal-body"> <!--cuerpo del inicio seccion-->
+                    <div class="modal-body"> <!--cuerpo del inicio sesion-->
+                    <form id="loginForm">
                       <!--cuerpo del usuario-->
                       <div class="input-group mb-3"> <!--cuerpo-->
                         <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
                         <div class="form-floating"> <!--donde va a escribir el usuario-->
-                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                          <input type="text" class="form-control" id="username" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="username">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
                         </div>
                       </div>
                       <!--cuerpo de la contraseña-->
                       <div class="input-group mb-3"> <!--cuerpo-->
                         <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
                         <div class="form-floating"> <!--donde va a escribir l contraseña-->
-                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+                          <input type="password" class="form-control" id="password" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                          <label for="password">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
                         </div>
                       </div>
-                      <a href="#"><div class="text-center"><button class="btn btn-dark">Iniciar Seccion</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
+                    </form>
+                      <div class="text-center"><button class="btn btn-dark" onclick="validacionLogin()">Iniciar Sesion</button></div><br> <!--boton para iniciar sesion.-->
                       <!--Redireccion en la misma pagina, para que te registres-->
-                      <p class="d-inline">¿No tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrate</button>
                     </div>
                   </div>
                 </div>
-              </div> <!--fin del contenedor del inicio de seccion-->
-              <!--contenedor del registro-->
-              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
-                  <div class="modal-content"> <!--contenido del registro-->
-                    <div class="modal-header"> <!--cabecera del registro-->
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registrarse</h1> <!--titulo-->
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de seccion y el registro-->
-                    </div>
-                    <div class="modal-body"> <!--cuerpo del registro-->
-                      <!--cuerpo del usuario a registrarse-->
-                      <div class="input-group mb-3"> <!--cuerpo-->
-                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
-                        <div class="form-floating"> <!--donde va a escribir el usuario-->
-                          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="floatingInputGroup1">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
-                        </div>
-                      </div>
-                      <!--cuerpo del correo-->
-                      <div class="input-group mb-3"> <!--cuerpo-->
-                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/envelope.svg" alt=""></span> <!--logo del usuario-->
-                        <div class="form-floating"> <!--donde va a escribir el correo-->
-                          <input type="email" class="form-control" id="floatingInputGroup1" placeholder="Correo Electronico"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="floatingInputGroup1">Correo Electronico</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
-                        </div>
-                      </div>
-                      <!--cuerpo de la contraseña que se va a colocar-->
-                      <div class="input-group mb-3"> <!--cuerpo-->
-                        <span class="input-group-text"><img height="40" src="node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
-                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
-                          <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="floatingInputGroup1">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
-                        </div>
-                      </div>
-                      <a href="#"><div class="text-center"><button class="btn btn-dark">Registrarse</button></div></a><br> <!--boton para iniciar seccion. Nota: por cuestion de uso, redirige a la pagina de admin-->
-                      <!--Redireccion en la misma pagina, para que inicies seccion-->
-                      <p class="d-inline">¿Ya tienes una cuenta?</p><button class="btn btn-link d-inline p-1" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Inicia seccion</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> <!--fin del contenedor del inicio de sesion-->
               <!--boton que le da la funcion de poder precionar a la persona-->
-              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="img/persona-logo.png" alt=""></button>
+              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="assets/img/persona-logo.png" alt=""></button>
             </li>
           </ul>
         </div>
@@ -122,169 +79,170 @@
     
     <!--Barra de Navegacion-->
     <!--------------------------------------------------->
-    <!-- Modal de inicio de sesión -->
-   <section>
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="loginModalLabel">Ingresar</h5>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form id="loginForm">
-              <div class="form-group">
-                <label for="username">Usuario</label>
-                <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario">
-              </div>
-              <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" onclick="validacionLogin()">Ingresar</button>
-          </div>
+
+      <!--Titulo de la pagina-->
+      <div class="container-fluid bg-dark opacity-75 text-white pt-2 pb-4"> <!--contenedor del titulo gigante-->
+        <div class="row text-center"> <!--fila principal del titulo-->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 display-2 fw-bolder">Reservacion</div> <!--titulo gigante-->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">¡Reserva y comienza tu vieaje hoy!</div> <!--sub titulo 1-->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">¡Asegura tu lugar en la mejor habitacion!</div> <!--sub titulo 2-->
         </div>
       </div>
-    </div>
-  </section>
+      <!--Titulo de la pagina-->
+      <!-- Modal de reservacion -->
+      <section>
+        <div class="modal fade" id="formularioModal" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
 
-    <!-- Modal de reservacion -->
-    <section>
-      <div class="modal fade" id="formularioModal" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
+              <!-- Contenido del reservacion -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="formularioModalLabel">Formulario de Reservacion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
 
-            <!-- Contenido del reservacion -->
-            <div class="modal-header">
-              <h5 class="modal-title" id="formularioModalLabel">Formulario de Reservacion</h5>
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+              <div class="modal-body">
+                <form id="formularioRegistro" onsubmit="return validarRegistro()">
+                  <input type="hidden" id="paqueteSeleccionado" name="paqueteSeleccionado">
+    
+                  <div class="form-group mb-4">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                  </div>
+    
+                  <div class="form-group mb-4">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos" required>
+                  </div>
+    
+                  <div class="form-group mb-4">
+                    <label for="cedula">Número de Cédula</label>
+                    <input type="text" class="form-control" id="cedula" placeholder="Ingresa tu número de cédula" required
+                      oninput="validarCedulaExistente()">
+                    <span id="cedulaExistente" class="cedulaExistente"></span>
+                  </div>
+    
+                  <div class="form-group mb-4">
+                    <label for="edad">Edad</label>
+                    <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required>
+                  </div>
+    
+                  <div class="form-group mb-4">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico"
+                      required>
+                  </div>
+    
+                  <div class="form-group mb-4">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono"
+                      required>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" form="formularioRegistro">Registrarse</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
             </div>
-
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal de ya registrado en sistema -->
+      <section class="modal fade" id="modalInscrito" tabindex="-1" aria-labelledby="modalInscritoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalInscritoLabel">Ya tines Reservacion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-body">
-              <form id="formularioRegistro" onsubmit="return validarRegistro()">
-                <input type="hidden" id="paqueteSeleccionado" name="paqueteSeleccionado">
-  
-                <div class="form-group">
-                  <label for="nombre">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-                </div>
-  
-                <div class="form-group">
-                  <label for="apellidos">Apellidos</label>
-                  <input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos" required>
-                </div>
-  
-                <div class="form-group">
-                  <label for="cedula">Número de Cédula</label>
-                  <input type="text" class="form-control" id="cedula" placeholder="Ingresa tu número de cédula" required
-                    oninput="validarCedulaExistente()">
-                  <span id="cedulaExistente" class="cedulaExistente"></span>
-                </div>
-  
-                <div class="form-group">
-                  <label for="edad">Edad</label>
-                  <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required>
-                </div>
-  
-                <div class="form-group">
-                  <label for="email">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico"
-                    required>
-                </div>
-  
-                <div class="form-group">
-                  <label for="telefono">Número de Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono"
-                    required>
-                </div>
-              </form>
+              ¡Usted ya está en nuestro sistema!
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary" form="formularioRegistro">Registrarse</button>
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <!-- Modal de ya registrado en sistema -->
-    <section class="modal fade" id="modalInscrito" tabindex="-1" aria-labelledby="modalInscritoLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalInscritoLabel">Ya tines Reservacion</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            ¡Usted ya está en nuestro sistema!
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Modal exitoso -->
-    <section class="modal fade" id="modalPreinscripcionExitosa" tabindex="-1" aria-labelledby="modalPreinscripcionExitosaLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalPreinscripcionExitosaLabel">¡Reservacion Exitosa!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>¡Usted ha sido registrado con éxito!</p>
-            <p>Pronto recibirá más información sobre los próximos pasos y detalles sobre su habitacion.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <!-- Modal exitoso -->
+      <section class="modal fade" id="modalPreinscripcionExitosa" tabindex="-1" aria-labelledby="modalPreinscripcionExitosaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalPreinscripcionExitosaLabel">¡Reservacion Exitosa!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>¡Usted ha sido registrado con éxito!</p>
+              <p>Pronto recibirá más información sobre los próximos pasos y detalles sobre su habitacion.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
 
-    <div class="container-fluid">
-      <div class="row bg-light mb-3 pt-3 pb-3">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <img src="Img/habi1.jpg" alt="Habitacion-1" class="w-100">
+
+      <div class="container-fluid"> <!--contenedor de las habitaciones-->
+        <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
+            <img src="assets/Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
+            <p class="h2 text-center mt-2">Habitaciones Dobles</p><br> <!--titulo-->
+            <!--texto-->
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
+            <button class="btn btn-primary" onclick="mostrarModalRegistro('1')">reservar</button> <!--boton funcional para reservar-->
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <p class="h2 text-center mt-2">Habitaciones Dobles</p><br>
-          <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-          <button class="btn btn-success">Mas informacion</button>
+        <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
+            <p class="h2 text-center">Habitaciones Dobles</p><br> <!--titulo-->
+            <!--texto-->
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
+            <button class="btn btn-primary" onclick="mostrarModalRegistro('2')">reservar</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
+            <img src="assets/Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+          </div>
+        </div>
+        <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
+            <img src="assets/Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
+            <p class="h2 text-center mt-2">Habitaciones Dobles</p><br> <!--titulo-->
+            <!--texto-->
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
+            <button class="btn btn-primary" onclick="mostrarModalRegistro('3')">reservar</button> <!--boton funcional para reservar-->
+          </div>
+        </div>
+        <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
+            <p class="h2 text-center">Habitaciones Dobles</p><br> <!--titulo-->
+            <!--texto-->
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
+            <button class="btn btn-primary" onclick="mostrarModalRegistro('4')">reservar</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
+            <img src="assets/Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+          </div>
         </div>
       </div>
-      <div class="row bg-light mb-3 pt-3 pb-3">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <p class="h2 text-center">Habitaciones Dobles</p><br>
-          <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-          <button class="btn btn-primary" onclick="mostrarModalRegistro('1')">reservar</button>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <img src="Img/habi1.jpg" alt="Habitacion-1" class="w-100">
-        </div>
-      </div>
-    </div>
-    
 
     <!--------------------------------------------------->
     <!--Pie de pagina-->
     
-    
-    <footer class="container-fluid pieFondo mt-3"> <!--Contenedor del pie de pagina-->
+    <footer class="container-fluid bg-dark mt-3"> <!--Contenedor del pie de pagina-->
       <div class="row"> <!--fila principal del pie de pagina-->
         <div class="col-lg-5 col-md-6 col-sm-12 text-center mb-4 mt-4"> <!--Columna de la seccion del logo-->
-          <img src="img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
+          <img src="assets/img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 text-white"> <!--Columna de la seccion de comunicate-->
           <div class="row"> <!--fila del titulo-->
@@ -292,26 +250,26 @@
           </div>
           <div class="row"> <!--fila de numero de telefono-->
             <div class="col mb-3"> <!--columna del numero de telefono-->
-              <img src="img/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0414-175-4156</p></span> <!--imagen y numero del telefono-->
+              <img src="assets/img/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0414-175-4156</p></span> <!--imagen y numero del telefono-->
             </div>
           </div>
           <div class="row"> <!--fila del correo electronico-->
             <div class="col mb-3"> <!--columna del correo electronico-->
-              <img src="img/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
+              <img src="assets/img/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
             </div>
           </div>
           <div class="row"> <!--fila de la ubicacion-->
             <div class="col mb-3"> <!--columna de la ubicacion-->
-              <img src="img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
+              <img src="assets/img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
 
               <!--Boton de la ubicacion-->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Ubicacion</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><p class="h5">Ver Ubicacion</p></button>
               <!--pantalla emergente con la ubicacion-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
+                      <h1 class="modal-title fs-3 text-dark" id="exampleModalLabel">Ubicacion</h1> <!--titulo de la pantalla, header-->
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body"> <!--donde va el mapa, body-->
@@ -334,28 +292,18 @@
             </div>
             <div class="row"> <!--fila de las redes sociales-->
             <div class="col text-center"> <!--columna de las redes sociales-->
-              <a href="#"><img class="me-2" src="img/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
-              <a href="#"><img class="me-2" src="img/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
-              <a href="#"><img class="me-2" src="img/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
-              <a href="#"><img class="me-2" src="img/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
+              <a href="#"><img class="me-2" src="assets/img/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
+              <a href="#"><img class="me-2" src="assets/img/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
+              <a href="#"><img class="me-2" src="assets/img/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
+              <a href="#"><img class="me-2" src="assets/img/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
             </div>
           </div>
         </div>
       </div>
     </footer>
     
-    <!--Pie de pagina-->
+    <!--Fin Pie de pagina-->
     <!--------------------------------------------------->
-
-
-    <!--------------------------------------------------->
-    <!--Recursos JavaScript-->
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="angelo/jsCustom.js"></script>
-
-    <!--Recursos JavaScript-->
-    <!--------------------------------------------------->
-    
-  </body>
-</html>
+         
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/script.js"></script>
