@@ -8,9 +8,58 @@ body{
 }
 /*color personalizado para la barra de navegacion*/
 .navbarFondo{
-    background-color: rgb(76, 156, 76);
+    background-color: white
 }
 /*color personalizado para el pie de pagina*/
 .pieFondo{
     background-color: rgb(21, 44, 36);
+}
+
+/*tamaño de los iconos de redes sociales*/
+
+.tamaños:hover{
+    height: 60px;
+}
+
+
+
+
+
+/*Animacion para navbar*/
+.animation-navbar{
+    position: relative;
+}
+
+.animation-navbar::before,
+.animation-navbar::after
+{
+    content: '';
+    border-bottom: 2px solid white;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.animation-navbar::before{
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+}
+
+.animation-navbar::after{
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+}
+
+.animation-navbar.activo::before,
+.animation-navbar:hover::before{
+    opacity: 1;
+    width: 70%;
+}
+
+.animation-navbar.activo::after,
+.animation-navbar:hover::after{
+    opacity: 1;
+    width: 40%;
 }
