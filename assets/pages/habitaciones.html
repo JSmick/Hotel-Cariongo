@@ -143,7 +143,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" form="formularioRegistro">Registrarse</button>
+                <button type="submit" class="btn btn-success" form="formularioRegistro">Registrarse</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
             </div>
@@ -156,7 +156,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="modalInscritoLabel">Ya tines Reservacion</h5>
+              <h5 class="modal-title" id="modalInscritoLabel">Ya tienes Reservacion</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -188,51 +188,189 @@
         </div>
       </section>
       
-
+      <!--Inicio de habitaciones-->
 
       <div class="container-fluid"> <!--contenedor de las habitaciones-->
         <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
-            <img src="../Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+            <div id="carrusel-habitacion-1" class="carousel slide mt-2 mb-2">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-habitacion-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/habitaciones/habitacion 2-1.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/habitaciones/habitacion 2-2.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img//habitaciones/habitacion 2-baño.jpg" class="d-block w-100" alt="Baño">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-habitacion-1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-habitacion-1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--imagen-->
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
-            <p class="h2 text-center mt-2">Habitacion Individual</p><br> <!--titulo-->
+            <p class="h2 text-center mt-2">Habitacion 1 Individual</p><br> <!--titulo-->
             <!--texto-->
-            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-            <button class="btn btn-primary" onclick="mostrarModalRegistro('1')">Reservar</button> <!--boton funcional para reservar-->
+            <p>Estas habitaciones son ideales para parejas. Con una cómoda cama matrimonial, una decoración acogedora y comodidades tales como: aire acondicionado, un armario y un baño. Te sentirás como en casa. ¡Reserva ahora y disfruta de una estancia relajante!</p><br>
+            <p class="h3 text-center">⭐⭐⭐⭐</p><br>
+            <button class="btn btn-success" onclick="mostrarModalRegistro('1')">Reservar</button> <!--boton funcional para reservar-->
           </div>
         </div>
         <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
-            <p class="h2 text-center">Habitacion Individual</p><br> <!--titulo-->
+            <p class="h2 text-center">Habitacion 2 Individual</p><br> <!--titulo-->
             <!--texto-->
-            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-            <button class="btn btn-primary" onclick="mostrarModalRegistro('2')">Reservar</button>
+            <p>Estas habitaciones son ideales para parejas. Con una cómoda cama matrimonial, una decoración acogedora y comodidades como una television, armario y baño. Te sentirás como en casa. ¡Reserva ahora y disfruta de una estancia relajante!</p><br>
+            <p class="h3 text-center">⭐⭐⭐</p><br>
+            <button class="btn btn-success" onclick="mostrarModalRegistro('2')">Reservar</button>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
-            <img src="../Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+            <div id="carrusel-habitacion-2" class="carousel slide mt-2 mb-2">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-habitacion-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/habitaciones/habitacion 3-1.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/habitaciones/habitacion 3-2.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img//habitaciones/habitacion 3-baño.jpg" class="d-block w-100" alt="Baño">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-habitacion-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-habitacion-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--imagen-->
           </div>
         </div>
         <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
-            <img src="../Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+            <div id="carrusel-habitacion-3" class="carousel slide mt-2 mb-2">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-habitacion-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/habitaciones/habitacion 1-1.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/habitaciones/habitacion 1-2.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img//habitaciones/habitacion 1-baño.jpg" class="d-block w-100" alt="Baño">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-habitacion-3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-habitacion-3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--imagen-->
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
-            <p class="h2 text-center mt-2">Habitacion Doble</p><br> <!--titulo-->
+            <p class="h2 text-center mt-2">Habitacion 3 Doble</p><br> <!--titulo-->
             <!--texto-->
-            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-            <button class="btn btn-primary" onclick="mostrarModalRegistro('3')">Reservar</button> <!--boton funcional para reservar-->
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, tales como: un baño, aire acondicionado y 2 televisores. Te sentirás como en casa. ¡Reserva ahora y disfruta de una estancia relajante!</p>
+            <br>
+            <p class="h3 text-center">⭐⭐⭐⭐</p><br>
+            <button class="btn btn-success" onclick="mostrarModalRegistro('3')">Reservar</button> <!--boton funcional para reservar-->
           </div>
         </div>
-        <div class="row bg-light mb-3 pt-3 pb-3"> <!--fila de una habitacion-->
+        <div class="row bg-light mb-0 pt-3 pb-3"> <!--fila de una habitacion-->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
-            <p class="h2 text-center">Habitacion Doble</p><br> <!--titulo-->
+            <p class="h2 text-center">Habitacion 4 Doble</p><br> <!--titulo-->
             <!--texto-->
-            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde estas habitaciones son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p>
-            <button class="btn btn-primary" onclick="mostrarModalRegistro('4')">Reservar</button>
+            <p>Estas habitaciones son ideales para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y comodidades tales como: aire acondicionado y baño. Te sentirás como en casa. ¡Reserva ahora y disfruta de una estancia relajante!</p><br>
+            <p class="h3 text-center">⭐⭐</p><br>
+            <button class="btn btn-success" onclick="mostrarModalRegistro('4')">Reservar</button>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
-            <img src="../Img/habi1.jpg" alt="Habitacion-1" class="w-100"> <!--imagen-->
+            <div id="carrusel-habitacion-4" class="carousel slide mt-2 mb-2">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-habitacion-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel-habitacion-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/habitaciones/habitacion 4-1.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/habitaciones/habitacion 4-2.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img//habitaciones/habitacion 4-baño.jpg" class="d-block w-100" alt="Baño">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-habitacion-4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-habitacion-4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--imagen-->
+          </div>
+        </div>
+        <div class="row bg-light mt-3 mb-0 pt-3 pb-3"> <!--fila de una habitacion-->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna de la imagen-->
+            <div id="carrusel-suite" class="carousel slide mt-2 mb-2">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel-suite" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel-suite" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../img/habitaciones/habitacion 5-1.jpg" class="d-block w-100" alt="Cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="../img/habitaciones/habitacion 5-2.jpg" class="d-block w-100" alt="Cama">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-suite" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carrusel-suite" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> <!--imagen-->
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12"> <!--columna del texto y titulo-->
+            <p class="h2 text-center mt-2">Habitacion 5 "Suite Cariongo"</p><br> <!--titulo-->
+            <!--texto-->
+            <p>Esta habitacion es ideal para parejas o amigos que viajan juntos. Con camas cómodas, una decoración acogedora y todas las comodidades necesarias, te sentirás como en casa. Además, las vistas desde esta habitacion son simplemente impresionantes. ¡Reserva ahora y disfruta de una estancia relajante!</p><br>
+            <p class="h3 text-center">⭐⭐⭐⭐⭐</p><br>
+            <button class="btn btn-success" onclick="mostrarModalRegistro('5')">Reservar</button> <!--boton funcional para reservar-->
           </div>
         </div>
       </div>
@@ -240,7 +378,7 @@
     <!--------------------------------------------------->
     <!--Pie de pagina-->
     
-    <footer class="container-fluid bg-dark mt-3"> <!--Contenedor del pie de pagina-->
+    <footer class="container-fluid bg-dark mt-0"> <!--Contenedor del pie de pagina-->
       <div class="row"> <!--fila principal del pie de pagina-->
         <div class="col-lg-5 col-md-6 col-sm-12 text-center mb-4 mt-4"> <!--Columna de la seccion del logo-->
           <img src="../img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
