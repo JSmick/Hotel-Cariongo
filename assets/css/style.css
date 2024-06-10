@@ -1,6 +1,6 @@
 /*Imagen de fondo en todas las paginas*/
 body{
-    background-image: url(../img/frente.jpg);
+    background-image: url(../img/general/fondo.jpg);
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;

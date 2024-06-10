@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--lugar donde estan los links, el collapse-->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"> <!--link de nosotros-->
-              <a class="nav-link active" aria-current="page" href="#Nosotros"><p class="h4 text-white ps-1 animation-navbar">Sobre Nosotros</p></a>
+              <a class="nav-link active" aria-current="page" href="#about_us"><p class="h4 text-white ps-1 animation-navbar">Sobre Nosotros</p></a>
             </li>
             <li class="nav-item"> <!--link de habitaciones-->
-              <a class="nav-link active" aria-current="page" href="habitaciones.html"><p class="h4 text-white ps-1 animation-navbar">Habitaciones</p></a>
+              <a class="nav-link active" aria-current="page" href="rooms.html"><p class="h4 text-white ps-1 animation-navbar">Habitaciones</p></a>
             </li>
             <li class="nav-item"> <!--link de contacto-->
-              <a class="nav-link active" aria-current="page" href="contacto.html"><p class="h4 text-white ps-1 animation-navbar">Contacto</p></a>
+              <a class="nav-link active" aria-current="page" href="contact.html"><p class="h4 text-white ps-1 animation-navbar">Contacto</p></a>
             </li>
           </ul>
           <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de sesion/registro-->
@@ -68,7 +68,7 @@
                 </div>
               </div> <!--fin del contenedor del inicio de seccion-->
               <!--boton que le da la funcion de poder precionar a la persona-->
-              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="../img/persona-logo.png" alt=""></button>
+              <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="../img/socials/persona-logo.png" alt=""></button>
             </li>
           </ul>
         </div>
@@ -80,38 +80,27 @@
     <!--------------------------------------------------->
     
     <!--Carrusel-->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--contenedor del carrusel-->
-      <div class="carousel-inner"> <!--lo que hace que se mueva solo-->
-        <div class="carousel-item active"> <!--imagen del carrusel-->
-          <img src="../img/portada-1.jpg" class="d-block w-100" alt="Habitacion"> <!--imagen-->
-        </div>
-        <div class="carousel-item"> <!--imagen del carrusel-->
-          <img src="../img/recepcion.jpg" class="d-block w-100" alt="Habitacion"> <!--imagen-->
-        </div>
-        <div class="carousel-item"> <!--imagen del carrusel-->
-          <img src="../img/segundo_piso.jpg" class="d-block w-100" alt="Habitacion"> <!--imagen-->
-        </div>
-      </div>
-    </div>
+    
+    <img src="../img/general/portada-1.jpg" class="d-block w-100" alt="Bienvenida"> <!--imagen-->      
+    
     <!--Fin del Carrusel-->
     <!--------------------------------------------------->
   
     <!--------------------------------------------------->
     <!--seccion de posible galeria-->
-    <div class="container-fluid bg-light border-0 mt-0"> <!--Contenedor de la seccion bienvenido-->
+    <div class="container-fluid bg-dark border-0 mt-0"> <!--Contenedor de la seccion bienvenido-->
       <div class="row"> <!--fila principal de la seccion-->
         <div class="col-lg-3 col-md-3 col-sm-3 col-6 mb-4 pt-3 mb-3"> <!--columna con una imagen-->
-          <img class="w-100" src="../img/lobby.jpg" alt=""> <!--Imagen-->
+          <img class="w-100 border border-2 border-white" src="../img/general/lobby.jpg" alt=""> <!--Imagen-->
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-6 mt-4 pt-3 mb-3"> <!--columna con una imagen-->
-          <img class="w-100" src="../img/pasillo.jpg" alt=""> <!--Imagen-->
+          <img class="w-100 border border-2 border-white" src="../img/general/pasillo.jpg" alt=""> <!--Imagen-->
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-12 mt-3"> <!--columna con contenido-->
-          <p class="h2 text-center" id="Nosotros">Bienvenido al</p> <!--titulo de bienvenida-->
-          <p class="h1 text-center">Hotel Cariongo II</p> <!--titulo principal-->
+          <p class="h1 text-center text-white" id="about_us">Hotel Cariongo II</p> <!--titulo principal-->
           <!--Historia del hotel-->
-          <p class="mt-3 ms-4 me-4 h2">Un refugio de encanto. En el corazón del estado Táchira, Venezuela, se encuentra el Hotel Cariongo, un oasis de paz y tranquilidad que te invita a descubrir la magia del Táchira. Su arquitectura colonial y su ambiente cálido te harán sentir como en casa desde el momento en que llegues.</p>
-          <div class="text-center mt-5"><a href="Sobre_Nosotros.html"><button class="btn btn-success">Leer Más</button></a></div><br>
+          <p class="mt-3 ms-4 me-4 h2 text-white">Un refugio de encanto. En el corazón del estado Táchira, Venezuela, se encuentra el Hotel Cariongo, un oasis de paz y tranquilidad que te invita a descubrir la magia del Táchira. Su arquitectura colonial y su ambiente cálido te harán sentir como en casa desde el momento en que llegues.</p>
+          <div class="text-center mt-5"><a href="about_us.html"><button class="btn btn-success">Leer Más</button></a></div><br>
         </div>
       </div>
     </div>
@@ -120,27 +109,27 @@
 
     <!--------------------------------------------------->
     <!--seccion de servicios-->
-    <div class="container-fluid bg-dark mt-0"> <!--contenedor de los servicios-->
+    <div class="container-fluid bg-white mt-0"> <!--contenedor de los servicios-->
       <div class="row"> <!--fila del titulo-->
-        <div class="col-lg-12 col-md-12 col-ms-12 col-12 text-center text-white mb-3"> <!--columna del titulo-->
+        <div class="col-lg-12 col-md-12 col-ms-12 col-12 text-center text-dark mb-3"> <!--columna del titulo-->
           <p class="display-3">Facilidades y Servicios</p> <!--titulo-->
         </div>
         <div class="row"> <!--fila de los servicios-->
           <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
             <!--Imagen y texto del servicio-->
-            <img height="70" src="../img/wifi.png" alt=""> <p class="text-white d-inline h6 ms-4">Servicio de Wi-Fi en la recepción</p>
+            <img height="70" src="../img/services/wifi.png" alt=""> <p class="text-dark d-inline h5 ms-4">Servicio de Wi-Fi en la recepción</p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
             <!--Imagen y texto del servicio-->
-            <img height="70" src="../img/agua.png" alt=""> <p class="text-white d-inline h6 ms-4">Servicio de Agua</p>
+            <img height="70" src="../img/services/agua.png" alt=""> <p class="text-dark d-inline h5 ms-4">Servicio de Agua</p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
             <!--Imagen y texto del servicio-->
-            <img height="70" src="../img/servicio-al-cliente.png" alt=""> <p class="text-white d-inline h6 ms-4">Atención las 24 horas del día</p>
+            <img height="70" src="../img/services/servicio-al-cliente.png" alt=""> <p class="text-dark d-inline h5 ms-4">Atención las 24 horas del día</p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12 mb-3"> <!--columna de servicio-->
             <!--Imagen y texto del servicio-->
-            <img height="70" src="../img/estacionamiento.png" alt=""> <p class="text-white d-inline h6 ms-4">Estacionamiento</p>
+            <img height="70" src="../img/services/estacionamiento.png" alt=""> <p class="text-dark d-inline h5 ms-4">Estacionamiento</p>
           </div>
         </div>
       </div>
@@ -162,7 +151,7 @@
       <div class="row"> <!--fila de opiniones-->
         <!--opinion 1-->
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
-          <img class="rounded-circle" height="150" src="../img/pfp-1.jpeg" alt=""> <!--imagen-->
+          <img class="rounded-circle" height="150" src="../img/pfp/pfp-1.jpeg" alt=""> <!--imagen-->
           <p class="h2 text-white">Angel Bustos</p> <!--nombre del opinando-->
           <p class="h4 text-primary mb-4">Web Developer</p> <!--profesion-->
           <!--Su opinion-->
@@ -170,7 +159,7 @@
         </div>
         <!--opinion 2-->
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
-          <img class="rounded-circle" height="150" src="../img/pfp-3.jpg" alt=""> <!--imagen-->
+          <img class="rounded-circle" height="150" src="../img/pfp/pfp-3.jpg" alt=""> <!--imagen-->
           <p class="h2 text-white">Juan Herrera</p> <!--nombre del opinando-->
           <p class="h4 text-primary mb-4">Graphic Designer</p> <!--profesion-->
           <!--Su opinion-->
@@ -178,7 +167,7 @@
         </div>
         <!--opinion 3-->
         <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center"> <!--columna de la opinio-->
-          <img class="rounded-circle" height="150" src="../img/pfp-2.jpg" alt=""> <!--imagen-->
+          <img class="rounded-circle" height="150" src="../img/pfp/pfp-2.jpg" alt=""> <!--imagen-->
           <p class="h2 text-white">Angelo Guillen</p> <!--nombre del opinando-->
           <p class="h4 text-primary mb-4">Marketing Specialist</p> <!--profesion-->
           <!--Su opinion-->
@@ -192,7 +181,7 @@
     <!--------------------------------------------------->
     <!--Pie de pagina-->
     
-    <footer class="container-fluid bg-dark mt-0"> <!--Contenedor del pie de pagina-->
+    <footer class="container-fluid bg-dark"> <!--Contenedor del pie de pagina-->
       <div class="row"> <!--fila principal del pie de pagina-->
         <div class="col-lg-5 col-md-6 col-sm-12 text-center mb-4 mt-4"> <!--Columna de la seccion del logo-->
           <img src="../img/hotel-final-2.png" alt="Hotel-cariongo" height="200"> <!--Logo-->
@@ -203,17 +192,17 @@
           </div>
           <div class="row"> <!--fila de numero de telefono-->
             <div class="col mb-3"> <!--columna del numero de telefono-->
-              <img src="../img/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0414-175-4156</p></span> <!--imagen y numero del telefono-->
+              <img src="../img/socials/telefono-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">0424-706-2944</p></span> <!--imagen y numero del telefono-->
             </div>
           </div>
           <div class="row"> <!--fila del correo electronico-->
             <div class="col mb-3"> <!--columna del correo electronico-->
-              <img src="../img/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
+              <img src="../img/socials/correo-logo.png" alt="telefono" height="40"> <span><p class="h5 align-middle d-inline">hotel.cariongo@gmail.com</p></span> <!--imagen y el correo electronico-->
             </div>
           </div>
           <div class="row"> <!--fila de la ubicacion-->
             <div class="col mb-3"> <!--columna de la ubicacion-->
-              <img src="../img/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
+              <img src="../img/socials/ubicacion-logo.png" alt="telefono" height="40"> <!--imagen de la ubicacion-->
 
               <!--Boton de la ubicacion-->
               <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal"><p class="h5">Ver Ubicacion</p></button>
@@ -245,15 +234,16 @@
             </div>
             <div class="row"> <!--fila de las redes sociales-->
             <div class="col text-center"> <!--columna de las redes sociales-->
-              <a href="#"><img class="me-2" src="../img/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
-              <a href="#"><img class="me-2" src="../img/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
-              <a href="#"><img class="me-2" src="../img/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
-              <a href="#"><img class="me-2" src="../img/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
+              <a href="#"><img class="me-2 tamaños" src="../img/socials/facebook-logo.png" alt="facebook" height="50"></a> <!--facebook-->
+              <a href="#"><img class="me-2 tamaños" src="../img/socials/twitter-logo.png" alt="twitter" height="50"></a> <!--twitter-->
+              <a href="#"><img class="me-2 tamaños" src="../img/socials/instagram-logo.png" alt="instagram" height="50"></a> <!--instagram-->
+              <a href="#"><img class="me-2 tamaños" src="../img/socials/tiktok-logo.png" alt="tiktok" height="50"></a> <!--tiktok-->
             </div>
           </div>
         </div>
       </div>
     </footer>
+    
     <!--Fin Pie de pagina-->
     <!--------------------------------------------------->
 
