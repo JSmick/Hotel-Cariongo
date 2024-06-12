@@ -137,17 +137,22 @@
     <!--Galeria-->
     <!--------------------------------------------------->
 
-
     <!--------------------------------------------------->
     <!--imagenes-->
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/frente.jpg" alt="habi">
+          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#hotel-frente">
+            <img class="rounded img-fluid border border-2 border-light" src="../img/general/frente.jpg" alt="habi">
+          </button>
           <p class="text-white">Frente del Hotel</p>
         </div>
+
+
         <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/recepcion.jpg" alt="habi">
+          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#hotel-recepcion">
+            <img class="rounded img-fluid border border-2 border-light" src="../img/general/recepcion.jpg" alt="habi">
+          </button>
           <p class="text-white">Recepcion</p>
         </div>
         <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
@@ -181,6 +186,50 @@
     </div>
 
     <!--imagenes-->
+    <!--------------------------------------------------->
+
+    <!--------------------------------------------------->
+    <!-- Modal hotel-frente-->
+    <div class="modal fade" id="hotel-frente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Frente del Hotel</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="rounded img-fluid border border-2 border-light" src="../img/general/frente.jpg" alt="habi">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal hotel-frente-->
+
+    <!-- Modal hotel-Recepcion-->
+    <div class="modal fade" id="hotel-recepcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Recepcion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="rounded img-fluid border border-2 border-light" src="../img/general/recepcion.jpg" alt="habi">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal hotel-Recepcion-->
+
+    <!-- Modal hotel-Pasillo-->
+    <!-- Modal hotel-Pasillo-->
+
     <!--------------------------------------------------->
 
     <!--------------------------------------------------->
