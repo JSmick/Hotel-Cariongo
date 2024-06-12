@@ -1,0 +1,34 @@
+/*Imagen de fondo en todas las paginas*/
+body{
+    background-image: url(fondo-2.png);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*color personalizado para la barra de navegacion*/
+.navbarFondo{
+    background-color: rgb(76, 156, 76);
+}
+/*color personalizado para el pie de pagina*/
+.pieFondo{
+    background-color: rgb(21, 44, 36);
+}
+  /* Estilo básico para la barra de navegación */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+
+  .navbar.hidden {
+    top: -100px; /* Altura fuera de la pantalla */
+  }
+  body {
+    padding-top: 70px; 
+  }
+
