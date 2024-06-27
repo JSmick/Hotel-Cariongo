@@ -14,3 +14,11 @@
 
     lastScrollTop = scrollTop;
   });
+  var myModal = document.getElementById('exampleModalToggle')
+  var myInput = document.getElementById('username')
+  var myInputTwo = document.getElementById('password')
+  
+  myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+    myImputTwo.focus()
+  })
