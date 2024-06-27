@@ -6,12 +6,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-/*tamaño de los iconos de redes sociales*/
-
-.tamaños:hover{
-    height: 60px;
-}
-
 /*Animacion para navbar*/
 .animation-navbar{
     position: relative;

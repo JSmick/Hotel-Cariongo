@@ -35,39 +35,6 @@
           </ul>
           <ul class="navbar-nav me-2 mb-2"> <!--icono del inicio de sesion/registro-->
             <li class="nav-item"> <!--un item mas como el de nosotros, contacto, etc-->
-              <!--contenedor del inicio de sesion-->
-              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
-                  <div class="modal-content"> <!--contenido del inicio de sesion-->
-                    <div class="modal-header"> <!--Cabezera del inicio de sesion-->
-                      <h1 class="modal-title fs-5 text-dark" id="loginModalLabel">Iniciar Sesion</h1> <!--titulo-->
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de sesion y el registro-->
-                    </div>
-                    <div class="modal-body"> <!--cuerpo del inicio sesion-->
-                    <form id="loginForm">
-                      <!--cuerpo del usuario-->
-                      <div class="input-group mb-3"> <!--cuerpo-->
-                        <span class="input-group-text"><img height="40" src="../../node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
-                        <div class="form-floating"> <!--donde va a escribir el usuario-->
-                          <input type="text" class="form-control" id="username" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="username">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
-                        </div>
-                      </div>
-                      <!--cuerpo de la contraseña-->
-                      <div class="input-group mb-3"> <!--cuerpo-->
-                        <span class="input-group-text"><img height="40" src="../../node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
-                        <div class="form-floating"> <!--donde va a escribir l contraseña-->
-                          <input type="password" class="form-control" id="password" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
-                          <label for="password">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
-                        </div>
-                      </div>
-                    </form>
-                      <div class="text-center"><button class="btn btn-dark" onclick="validacionLogin()">Iniciar Sesion</button></div><br> <!--boton para iniciar sesion.-->
-                      <!--Redireccion en la misma pagina, para que te registres-->
-                    </div>
-                  </div>
-                </div>
-              </div> <!--fin del contenedor del inicio de sesion-->
               <!--boton que le da la funcion de poder precionar a la persona-->
               <button class="btn btn-link" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><img height="50" src="../img/socials/persona-logo.png" alt=""></button>
             </li>
@@ -77,8 +44,38 @@
       
     </header>
     
-    <!--Barra de Navegacion-->
-    <!--------------------------------------------------->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered"> <!--el contenedor centrado-->
+        <div class="modal-content"> <!--contenido del inicio de sesion-->
+          <div class="modal-header"> <!--cabecera del inicio de sesion-->
+            <h1 class="modal-title fs-5 text-dark" id="loginModalLabel">Iniciar Sesion</h1> <!--titulo-->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--boton que cierra el inicio de sesion y el registro-->
+          </div>
+          <div class="modal-body"> <!--cuerpo del inicio sesion-->
+          <form id="loginForm">
+            <!--cuerpo del usuario-->
+            <div class="input-group mb-3"> <!--cuerpo-->
+              <span class="input-group-text"><img height="40" src="../../node_modules/bootstrap-icons/icons/people.svg" alt=""></span> <!--logo del usuario-->
+              <div class="form-floating"> <!--donde va a escribir el usuario-->
+                <input type="text" class="form-control" id="username" placeholder="Usuario"> <!--lo que aparece cuando la caja esta vacia-->
+                <label for="username">Usuario</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+              </div>
+            </div>
+            <!--cuerpo de la contraseña-->
+            <div class="input-group mb-3"> <!--cuerpo-->
+              <span class="input-group-text"><img height="40" src="../../node_modules/bootstrap-icons/icons/key.svg" alt=""></span> <!--logo de la contraseña-->
+              <div class="form-floating"> <!--donde va a escribir l contraseña-->
+                <input type="password" class="form-control" id="password" placeholder="Contraseña"> <!--lo que aparece cuando la caja esta vacia-->
+                <label for="password">Contraseña</label><!--similar a los de arriba: aparece cuando la caja esta vacia-->
+              </div>
+            </div>
+          </form>
+            <div class="text-center"><button class="btn btn-dark" onclick="validacionLogin()">Iniciar Sesion</button></div><br><!--boton para iniciar sesion.-->
+            <!--Redireccion en la misma pagina, para que te registres-->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Titulo de la pagina-->
     <div class="container-fluid bg-dark opacity-75 pt-2 text-white">
@@ -139,98 +136,45 @@
 
     <!--------------------------------------------------->
     <!--imagenes-->
-    <div class="container text-center">
+    
+    <div class="container">
       <div class="row">
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#hotel-frente">
-            <img class="rounded img-fluid border border-2 border-light" src="../img/general/frente.jpg" alt="habi">
-          </button>
-          <p class="text-white">Frente del Hotel</p>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/escaleras.jpg" alt="escaleras">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/estacionamiento-1.jpg" alt="estacionamiento-1">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/estacionamiento-2.jpg" alt="estacionamiento-2">
         </div>
 
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/frente.jpg" alt="frente">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/pasillo-1.jpg" alt="">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/pasillo-2.jpg" alt="">
+        </div>
 
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#hotel-recepcion">
-            <img class="rounded img-fluid border border-2 border-light" src="../img/general/recepcion.jpg" alt="habi">
-          </button>
-          <p class="text-white">Recepcion</p>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/pasillo-3.jpg" alt="">
         </div>
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/pasillo-1.jpg" alt="habi">
-          <p class="text-white">Pasillo</p>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/segundo_piso.jpg" alt="">
         </div>
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/pasillo-2.jpg" alt="habi">
-          <p class="text-white">Pasillo</p>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+          <img class="rounded w-100 border border-1 border-light" src="../img/general/recepcion.jpg" alt="">
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/escaleras.jpg" alt="habi">
-          <p class="text-white">Escaleras para el segundo piso</p>
-        </div>
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/segundo_piso.jpg" alt="habi">
-          <p class="text-white">Segundo piso</p>
-        </div>
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/estacionamiento-1.jpg" alt="habi">
-          <p class="text-white">Estacionamiento (Frente)</p>
-        </div>
-        <div class="col-lg-3 colg-md-6 col-sm-6 col-12 mb-3">
-          <img class="rounded img-fluid border border-2 border-light" src="../img/general/estacionamiento-2.jpg" alt="habi">
-          <p class="text-white">Estacionamiento</p>
-        </div>
+        
       </div>
     </div>
 
-    <!--imagenes-->
-    <!--------------------------------------------------->
 
-    <!--------------------------------------------------->
-    <!-- Modal hotel-frente-->
-    <div class="modal fade" id="hotel-frente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Frente del Hotel</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img class="rounded img-fluid border border-2 border-light" src="../img/general/frente.jpg" alt="habi">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal hotel-frente-->
 
-    <!-- Modal hotel-Recepcion-->
-    <div class="modal fade" id="hotel-recepcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Recepcion</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img class="rounded img-fluid border border-2 border-light" src="../img/general/recepcion.jpg" alt="habi">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal hotel-Recepcion-->
 
-    <!-- Modal hotel-Pasillo-->
-    <!-- Modal hotel-Pasillo-->
-
-    <!--------------------------------------------------->
 
     <!--------------------------------------------------->
     <!--Pie de pagina-->
