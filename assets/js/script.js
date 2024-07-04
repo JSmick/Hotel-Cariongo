@@ -9,10 +9,10 @@ function validacionLogin() {
 
   // Verificar si no hay credenciales almacenadas y agregar las predeterminadas
   if (!storedUsername && !storedPassword) {
-    localStorage.setItem("username", "bridge");
-    localStorage.setItem("password", "academy");
-    storedUsername = "bridge";
-    storedPassword = "academy";
+    localStorage.setItem("username", "admin@cariongo.com");
+    localStorage.setItem("password", "hotelcariongo2");
+    storedUsername = "admin@cariongo.com";
+    storedPassword = "hotelcariongo2";
   }
 
   // Validar las credenciales
